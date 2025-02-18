@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Przeprowadzki - Szybko i Bezproblemowo</title>
+  <meta
+    name="description"
+    content="Spektakularne i bezproblemowe przeprowadzki: mieszkań, firm oraz ciężkich rzeczy. Skontaktuj się z nami już dziś!"
+  />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome (ikony) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnH2N1gKiw5XgP33pa0VQ+Zsoj8w1qeTCGZd8n1D3apG0s5oyIHYR8dXF0q5RNFCOxKO7yroQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- AOS do efektów fade-in -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <!-- Nasze style CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Nawigacja (navbar) -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">Przeprowadzki</div>
+    <ul class="nav-list">
+      <li><a href="#hero">Start</a></li>
+      <li><a href="#about">O nas</a></li>
+      <li><a href="#services">Oferta</a></li>
+      <li><a href="#pricing">Jak to działa</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION (wielowarstwowy parallax) -->
+  <section id="hero" class="hero">
+    <!-- Warstwy do parallax -->
+    <div class="parallax-layer layer-back"></div>
+    <div class="parallax-layer layer-mid"></div>
+    <div class="parallax-layer layer-front"></div>
+
+    <!-- Główna treść hero -->
+    <div class="hero-content">
+      <h1>Szybkie i bezproblemowe przeprowadzki!</h1>
+      <p>Skontaktuj się z nami i dołącz do grona zadowolonych klientów!</p>
+      <button class="cta-btn" onclick="scrollToSection('contact')">
+        Zamów przeprowadzkę
+      </button>
+    </div>
+  </section>
+
+  <!-- O NAS -->
+  <section id="about" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Dlaczego my?</h2>
+      <p class="section-desc">
+        Jesteśmy zespołem profesjonalistów, dla których najważniejsze jest
+        bezpieczeństwo Twojego mienia i bezstresowy przebieg przeprowadzki.
+      </p>
+      <ul class="features-list">
+        <li><i class="fa fa-shield-alt"></i> Bezpieczny transport</li>
+        <li><i class="fa fa-hand-holding-usd"></i> Atrakcyjne ceny</li>
+        <li><i class="fa fa-users-cog"></i> Doświadczeni pracownicy</li>
+        <li><i class="fa fa-clock"></i> Szybka realizacja</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="services" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Nasza oferta</h2>
+      <div class="services-grid">
+        <div class="service-box" data-aos="zoom-in">
+          <i class="fa fa-home service-icon"></i>
+          <img src="image/1.jpg" alt="move" width="320px" height="200px">
+          <h2>Przeprowadzki mieszkań</h2><br>
+          <p>
+            Zadbamy o Twoje meble, sprzęt RTV/AGD i wszystkie pozostałe
+            przedmioty – szybko i bezpiecznie.
+          </p>
+        </div>
+        <div class="service-box" data-aos="zoom-in">
+          <i class="fa fa-building service-icon"></i>
+          <img src="image/3.jpeg" alt="move2" width="320px" height="200px">
+          <h2>Przeprowadzki firm</h2><br>
+          <p>
+            Profesjonalna relokacja biur, magazynów i innych
+            przestrzeni komercyjnych.
+          </p>
+        </div>
+        <div class="service-box" data-aos="zoom-in">
+          <i class="fa fa-dolly service-icon"></i>
+          <img src="image/4.jpg" alt="move3" width="320px" height="200px">
+          <h2>Transport ciężkich rzeczy</h2><br>
+          <p>
+            Od pianin po sejfy i dzieła sztuki – przewieziemy
+            wszystko z należytą ostrożnością.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIE KLIENTÓW (karuzela) -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Opinie klientów</h2>
+      <div class="carousel">
+        <div class="testimonial-slide">
+          <p class="quote">
+            „Przeprowadzka przebiegła bezstresowo i szybko. Pracownicy bardzo pomocni i mili!”
+          </p>
+          <p class="author">— Jan Kowalski</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="quote">
+            „Super kontakt, terminowa realizacja i dobra cena. Zdecydowanie polecam!”
+          </p>
+          <p class="author">— Anna Nowak</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="quote">
+            „Transport pianina to był kosmos, ale poradzili sobie z tym idealnie. Bez uszkodzeń!”
+          </p>
+          <p class="author">— Piotr Zieliński</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prevSlide" class="carousel-btn">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button id="nextSlide" class="carousel-btn">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAK TO DZIAŁA (lub cennik) -->
+  <section id="pricing" class="section pricing">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Jak to działa?</h2>
+      <div class="steps">
+        <div class="step" data-aos="flip-left">
+          <i class="fa fa-phone"></i>
+          <h3>Skontaktuj się z nami</h3>
+          <p>
+            Wypełnij formularz lub zadzwoń. Odpowiadamy bardzo szybko,
+            by pomóc w organizacji przeprowadzki.
+          </p>
+        </div>
+        <div class="step" data-aos="flip-left">
+          <i class="fa fa-edit"></i>
+          <h3>Ustalamy szczegóły</h3>
+          <p>
+            Konsultujemy terminy, wyceniamy usługę i doradzamy,
+            jak najlepiej zabezpieczyć rzeczy.
+          </p>
+        </div>
+        <div class="step" data-aos="flip-left">
+          <i class="fa fa-check-circle"></i>
+          <h3>Realizujemy przeprowadzkę</h3>
+          <p>
+            Pakujemy, przewozimy i rozładowujemy Twoje rzeczy
+            bezpiecznie i na czas!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARZ KONTAKTOWY -->
+  <section id="contact" class="section contact">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Skontaktuj się z nami</h2>
+      <form id="contactForm" onsubmit="return submitForm(event)">
+        <input type="text" name="name" placeholder="Imię" required/>
+        <input type="tel" name="phone" placeholder="Telefon" required/>
+        <input type="email" name="email" placeholder="E-mail" required/>
+        <textarea name="message" placeholder="Wiadomość" required></textarea>
+        <button type="submit">Wyślij zapytanie</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAPA (opcjonalna) -->
+  <!--
+  <section class="map-section">
+    <div class="container">
+      <h2>Gdzie nas znaleźć?</h2>
+      <div class="map-container">
+        <iframe
+          src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.2793380421197!2d21.007366415578!3d52.23195897976173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6be3866c03%3A0x8b813044d779966f!2sPa%C5%82ac%20Kultury%20i%20Nauki!5e0!3m2!1spl!2spl!4v1615564142210!5m2!1spl!2spl\"
+          width=\"600\"
+          height=\"450\"
+          style=\"border:0;\"
+          allowfullscreen=\"\"
+          loading=\"lazy\"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- STOPKA -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Kontakt: <strong>123-456-789</strong> | <strong>kontakt@przeprowadzki.pl</strong>
+      </p>
+      <p>Adres biura: ul. Przykładowa 1, Warszawa</p>
+      <p>
+        <a href="#hero">Wróć na górę</a> |
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- AOS library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP (animacje) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Główny plik JS -->
+  <script src="script.js"></script>
+</body>
+</html>
